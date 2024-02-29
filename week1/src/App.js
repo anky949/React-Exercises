@@ -15,9 +15,7 @@ function App() {
         setNames([...names, name]);
     }
 
-    const setNewName = (event) => {
-        setName(event.target.value);
-    }
+
 
 
 
@@ -37,7 +35,7 @@ function App() {
         <div className="App">
             Hello World
             <div>
-                <input type={"text"} onChange={setNewName}/>
+                <input type={"text"} onChange={(event)=>setName(event.target.value)}/>
                 <input type={"button"} onClick={addNames} value={"add Name"}></input>
             </div>
 
