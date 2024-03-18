@@ -11,9 +11,16 @@ import {HomeComponent} from "./components/HomeComponent";
 import {CartComponent} from "./components/CartComponent";
 import {MenuComponent} from "./components/MenuComponent";
 
+
 function App() {
 
+    /*
+      install following -:
 
+      npm install react-bootstrap bootstrap
+     npm install react-router-dom --save
+    npm install styled-components
+    */
   const [cartProducts,setCartProducts] = useState([]);
 
   const addProductToCart=(product)=>{
